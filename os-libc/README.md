@@ -1,4 +1,6 @@
-# OS examples
+# OS with libc
+
+These examples run in an environment where an operating system is present (i.e. we can make syscalls to the Linux kernel), and rely on the presence of a C standard library.
 
 Compile and link these programs using the Zig toolchain.
 

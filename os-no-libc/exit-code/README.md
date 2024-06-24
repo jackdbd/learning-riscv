@@ -11,7 +11,6 @@ riscv64-elf-as -march rv64i -mabi lp64 -o exit-code.o exit-code.s
 Link:
 
 ```sh
-riscv64-elf-ld --script exit-code.ld -o exit-code.elf --verbose exit-code.o
 riscv64-elf-ld -o exit-code.elf --verbose exit-code.o
 ```
 
@@ -32,7 +31,7 @@ echo $?
 Command:
 
 ```sh
-readelf --symbols file exit-code.elf
+readelf --symbols exit-code.elf
 ```
 
 Output:
