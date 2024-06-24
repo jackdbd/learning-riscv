@@ -40,6 +40,8 @@ Reference: Table RISC-V calling convention register usage in chapter [Calling Co
 
 ## Reference
 
+- [RISC-V Reference Card](https://www.cl.cam.ac.uk/teaching/1516/ECAD+Arch/files/docs/RISCVGreenCardv8-20151013.pdf)
+- [RISC-V Instruction Set Specifications](https://msyksphinz-self.github.io/riscv-isadoc/html/index.html)
 - [RISC-V Linux syscall table](https://jborza.com/post/2021-05-11-riscv-linux-syscalls/)
 - [RISC-V Assembler: Arithmetic](https://projectf.io/posts/riscv-arithmetic/)
 - [RISC-V Add Immediate](https://msyksphinz-self.github.io/riscv-isadoc/html/rvi.html#addi)
@@ -60,3 +62,6 @@ Reference: Table RISC-V calling convention register usage in chapter [Calling Co
 - [RISC-V Online Assembler](https://riscvasm.lucasteske.dev/)
 - [RISC-V System call table](https://jborza.com/post/2021-05-11-riscv-linux-syscalls/)
 - [The Magic of RISC-V Vector Processing (LaurieWired)](https://youtu.be/Ozj_xU0rSyY?si=Ba6-AvblLUVcKzMW)
+- [Understanding RISC-V Calling Convention](https://www2.cs.sfu.ca/~ashriram/Courses/CS295/assets/notebooks/RISCV/RISCV_CALL.pdf)
+- [Syscalls, exceptions, and
+interrupts, …oh my!](https://www.cs.cornell.edu/courses/cs3410/2019sp/schedule/slides/14-ecf-pre.pdf)

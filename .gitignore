@@ -6,3 +6,6 @@ out/
 
 # ELF files
 *.elf
+
+# stuff I don't want to commit, or that I still don't know where to place in the project
+wip/

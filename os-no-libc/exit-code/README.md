@@ -20,7 +20,7 @@ Execute:
 qemu-riscv64 exit-code.elf
 ```
 
-Check that the status code was `7`:
+Check that the exit status code was `7`:
 
 ```sh
 echo $?

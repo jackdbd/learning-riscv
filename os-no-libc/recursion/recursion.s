@@ -1,5 +1,8 @@
-.equ EXIT, 93 # Linux exit system call on RISC-V
+.section .text
+.globl _start
+.equ EXIT, 93 # Linux exit syscall
 .equ N, 5 # compute for n = 5
+
 # Sequence:
 # a(n) = a(n-1) + 3
 # Iterations: 
@@ -8,22 +11,21 @@
 # a(2) = a(1) + 3 = (a(0)+3) + 3 = 8
 # and so on...
 
-# This is the entry point for the program on bare metal environments (no OS, so
-# no libc available)
-.globl _start
-# This is the entry point for the program when the libc is available.
-# .globl main
-
 _start:
-# main:
     li a0, N
+    # Call subroutine `compute`
     call compute
     li a7, EXIT
     ecall
 
 compute:
-    # Allocate stack for register ra. RV64 registers are 64 bit = 8 bytes
+    # Function prologue: allocate stack + save return address
+    # Allocate the stack: subtract 8 from the current value of the stack pointer
+    # register. This operation allocates 8 bytes on the stack. RV64 registers
+    # are 64 bit (8 bytes), so we are allocating space for one register.
     addi sp, sp, -8
+    # Save ra: store the 64-bit value found in register ra (return address) into
+    # the memory location pointed to by the sp register.
     sd ra, 0(sp)
        
     # In this program, recursion ends when n (that we store in a0) reaches 0.
@@ -36,7 +38,7 @@ compute:
 
 compute_end:
     li a0, 2
-    # Recursion is now ended, but we still need to restore the ra register and
+    # Recursion has now ended, but we still need to restore the ra register and
     # free the stack.
 
 compute_ret:
