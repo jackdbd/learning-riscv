@@ -61,7 +61,8 @@ Reference: Table RISC-V calling convention register usage in chapter [Calling Co
 - [RISC-V Reference (PDF)](https://www.cs.sfu.ca/~ashriram/Courses/CS295/assets/notebooks/RISCV/RISCV_CARD.pdf)
 - [RISC-V Online Assembler](https://riscvasm.lucasteske.dev/)
 - [RISC-V System call table](https://jborza.com/post/2021-05-11-riscv-linux-syscalls/)
-- [The Magic of RISC-V Vector Processing (LaurieWired)](https://youtu.be/Ozj_xU0rSyY?si=Ba6-AvblLUVcKzMW)
+- [The Magic of RISC-V Vector Processing (LaurieWired - YouTube)](https://youtu.be/Ozj_xU0rSyY?si=Ba6-AvblLUVcKzMW)
 - [Understanding RISC-V Calling Convention](https://www2.cs.sfu.ca/~ashriram/Courses/CS295/assets/notebooks/RISCV/RISCV_CALL.pdf)
 - [Syscalls, exceptions, and
 interrupts, …oh my!](https://www.cs.cornell.edu/courses/cs3410/2019sp/schedule/slides/14-ecf-pre.pdf)
+- [LearnRISC-V - YouTube](https://www.youtube.com/@LearnRISCV/videos)
