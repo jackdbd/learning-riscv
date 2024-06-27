@@ -26,6 +26,8 @@ If you want to see the dynamic library calls made by this program, use [ltrace](
 ltrace qemu-riscv64 wordcount.elf 2> ltrace.txt
 ```
 
+Compile and execute all other programs in the same way.
+
 ```sh
 zig cc prime.s -o prime.elf -target riscv64-linux -lc
 qemu-riscv64 prime.elf

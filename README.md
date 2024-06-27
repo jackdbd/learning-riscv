@@ -66,3 +66,4 @@ Reference: Table RISC-V calling convention register usage in chapter [Calling Co
 - [Syscalls, exceptions, and
 interrupts, …oh my!](https://www.cs.cornell.edu/courses/cs3410/2019sp/schedule/slides/14-ecf-pre.pdf)
 - [LearnRISC-V - YouTube](https://www.youtube.com/@LearnRISCV/videos)
+- [RISC-V Directives](https://sourceware.org/binutils/docs/as/RISC_002dV_002dDirectives.html)
