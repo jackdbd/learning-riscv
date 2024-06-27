@@ -30,3 +30,8 @@ ltrace qemu-riscv64 wordcount.elf 2> ltrace.txt
 zig cc prime.s -o prime.elf -target riscv64-linux -lc
 qemu-riscv64 prime.elf
 ```
+
+```sh
+zig cc djb2.s -o djb2.elf -target riscv64-linux -lc
+qemu-riscv64 djb2.elf
+```
