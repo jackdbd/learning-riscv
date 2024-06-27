@@ -1,5 +1,5 @@
 .section .text
-.globl main             # run in C 'environment' 
+.globl main
 
 main:
     addi sp, sp, -40    # store ra (return address) and saved regs on stack
@@ -60,5 +60,6 @@ end:
     ret                 # return to caller
 
 .section .rodata
+
 result:
     .asciz "Lines: %u  Words: %u  Chars: %u\n"

@@ -13,3 +13,20 @@ The generated RISC-V ELF binary should have a `main` symbol in its symbol table 
 ```sh
 riscv64-elf-objdump -t -j .text wordcount.elf | grep main
 ```
+
+Execute the ELF binary:
+
+```sh
+qemu-riscv64 wordcount.elf
+```
+
+If you want to see the dynamic library calls made by this program, use [ltrace](https://gitlab.com/cespedes/ltrace) and redirect all of its output to a file.
+
+```sh
+ltrace qemu-riscv64 wordcount.elf 2> ltrace.txt
+```
+
+```sh
+zig cc prime.s -o prime.elf -target riscv64-linux -lc
+qemu-riscv64 prime.elf
+```
