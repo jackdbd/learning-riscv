@@ -18,8 +18,15 @@
     # Zig flake helper
     # Check the flake.nix in zig2nix project for more options:
     # https://github.com/Cloudef/zig2nix/blob/master/flake.nix
+    # https://github.com/Cloudef/zig2nix/blob/master/versions.json
     env = zig2nix.outputs.zig-env.${system} {
-      zig = zig2nix.outputs.packages.${system}.zig.default.bin;
+      # TODO: We would need to tie the zig version to the zls version
+      # Example: Zig vers. 0.13.0 should be used with ZLS vers. 0.13.0.
+      # I think it shouldn't be too hard. I guess I just need to download the
+      # specific ZLS version from the GitHub releases.
+      # https://github.com/zigtools/zls
+      zig = zig2nix.outputs.packages.${system}.zig."0.13.0".bin;
+      # zig = zig2nix.outputs.packages.${system}.zig.default.bin;
       # zig = zig2nix.outputs.packages.${system}.zig.master.bin;
     };
 
