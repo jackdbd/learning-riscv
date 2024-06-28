@@ -4,6 +4,9 @@ out/
 # object files
 *.o
 
+os-libc/linked-list/demo-singly-linked-list*
+!os-libc/linked-list/demo-singly-linked-list.zig
+
 # ELF files
 *.elf
 
