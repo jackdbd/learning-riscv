@@ -29,11 +29,18 @@ ltrace qemu-riscv64 wordcount.elf 2> ltrace.txt
 Compile and execute all other programs in the same way.
 
 ```sh
-zig cc prime.s -o prime.elf -target riscv64-linux -lc
-qemu-riscv64 prime.elf
+zig cc average.s -o average.elf -target riscv64-linux -lc
+qemu-riscv64 average.elf
+# or
+qemu-riscv64 average.elf < numbers.txt
 ```
 
 ```sh
 zig cc djb2.s -o djb2.elf -target riscv64-linux -lc
 qemu-riscv64 djb2.elf
+```
+
+```sh
+zig cc prime.s -o prime.elf -target riscv64-linux -lc
+qemu-riscv64 prime.elf
 ```
